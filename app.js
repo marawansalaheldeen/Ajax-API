@@ -18,6 +18,9 @@ var products = [
 var currentid = 2;  
 
 
+app.get('/products',function(req,res){
+    res.send({ products: products });
+})
 
 app.use(express.static(__dirname));
 var port =3000;
